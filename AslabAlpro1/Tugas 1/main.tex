@@ -1,0 +1,126 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{scalerel}
+\usepackage{fancyhdr}
+\usepackage{tikz, pgfplots, tkz-euclide,calc}
+\usepackage{geometry}
+ \geometry{
+        total = {160mm, 237mm},
+        left = 25mm,
+        right = 35mm,
+        top = 30mm,
+        bottom = 30mm,
+      }
+      
+\usepackage{tabularx}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{enumitem}
+\usepackage{lastpage}
+\usepackage{listings}
+\usepackage{transparent}
+\usepackage{cancel}
+\usepackage{setspace}
+
+\definecolor{pgray}{rgb}{0.5,0.5,0.5}
+\definecolor{pblue}{rgb}{0.13,0.13,1}
+\definecolor{pgreen}{rgb}{0,0.5,0}
+\definecolor{pred}{rgb}{0.9,0,0}
+\definecolor{pgrey}{rgb}{0.46,0.45,0.48}
+\definecolor{pcyan}{HTML}{D4EFFC}
+\definecolor{lblue}{HTML}{00AEEF}
+\definecolor{input}{HTML}{AAE1FA}
+\definecolor{bg}{rgb}{0.95, 0.95, 0.92}
+\definecolor{vscode}{HTML}{282A36}
+
+\onehalfspacing
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\lstdefinestyle{output}{
+    language=Java,
+    backgroundcolor=\color{vscode},
+    basicstyle=\small\ttfamily\color{white},
+    frame=single,
+    escapeinside={(*}{*)},
+    showspaces=false,
+    showtabs=false,
+    breaklines=true,
+    showstringspaces=false,
+    breakatwhitespace=true,
+    }
+
+\lstdefinestyle{standard}{language=Java,
+    showspaces=false,
+    showtabs=false,
+    breaklines=true,
+    showstringspaces=false,
+    breakatwhitespace=true,
+    commentstyle=\color{pgray},
+    keywordstyle=\color{pblue},
+    stringstyle=\color{pgreen},
+    basicstyle=\small\ttfamily,
+    frame=single,
+    backgroundcolor=\color{bg},
+    escapeinside={(*}{*)},}
+
+
+\title{Tugas Pertemuan 1}
+\author{Dhanar A \& Fajar A}
+\date{11 September 2024}
+
+\begin{document}
+
+\maketitle
+
+\section*{Problems}
+\begin{enumerate}
+    \item Buatlah sebuah program yang outputnya menampilkan biodata dengan ketentuan 
+    \begin{itemize}
+        \item Biodata mencakup nama lengkap \& panggilan , nrp , angkatan , asal , TTL , Dosen Wali
+        \item Deklarasikan setiap variabel dengan tipe data yang sesuai 
+        \item Gunakan \blue{System.out.println()} untuk menampilkan variabel dan nilai yang telah di-deklarasikan sebelumnya
+    \end{itemize}
+    Contoh Output : 
+    \begin{lstlisting}[style=output]
+                ----- Biodata Mahasiswa -----
+    Nama Lengkap    : Fajar Anwar
+    Nama Panggilan  : Anwar
+    NRP             : 5002221075
+    Angkatan        : 2022
+    Asal            : Surabaya
+    TTL             : 12 September 2024
+    Dosen Wali      : Prof Sigma
+    \end{lstlisting}
+
+    \newpage
+    \item Diberikan program seperti berikut 
+    \begin{lstlisting}[style=standard]
+public class Week1_no2 {
+    public static void main (String []args) {
+    String nama = "Nar Dios";
+    int nrp = 123456789;
+    String asal = "Surabaya";
+    int angkatan = 2024;
+    String TTL = "12 Januari 2024";
+    String dosenWali = "Prof Sigma";
+    
+    System.out.println("-----Biodata Mahasiswa-----");
+    System.out.println(Nama :  + nama);
+    System.out.println("NRP : " + nrp);
+    System.out.println("Asal: " + asal);
+    System.out.println("Angkatan : " + angkatan);
+    System.out.println("TTL: " + TTL);
+    System.out.println("Dosen Wali: " + dosenWali);
+    System.out.println("Alamat: " + alamat); 
+    }
+}
+    \end{lstlisting}
+    Perbaiki kesalahan dari program berikut dengan \underline{menambahkan} apapun agar program dapat di running , kemudian tampilkan outputnya 
+\end{enumerate}
+
+\end{document}

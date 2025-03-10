@@ -1,0 +1,3 @@
+Masukkan gaji pokok : (*\inputscan{52} \enter*)
+Masukkan jabatan : (*\inputscan{Manager} \enter*)
+Gaji setelah ditambahkan bonus adalah 62.4 Juta

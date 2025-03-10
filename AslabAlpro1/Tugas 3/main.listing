@@ -1,0 +1,3 @@
+Masukkan titik (x0,y0): (*\inputscan{1 2} \enter*)
+Masukkan koefisien garis (A,B,C): (*\inputscan{1 1 0} \enter*)
+Jarak titik (1,2) ke garis adalah 2.121
